@@ -3,18 +3,59 @@ html, body {
     padding: 0;
 }
 
-body {
+body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #ddd;
+    background: linear-gradient(135deg, rgba(240, 128, 128, 0.5), rgba(70, 130, 180, 0.5), rgba(144, 238, 144, 0.5));
     line-height: 1.65;
-    padding: 1000px;
+    padding-bottom: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-.container-satu {
-    width: 800px;
-    margin: 50px auto;
-    background-color: #fff;
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/akatsuki.png') no-repeat center center;
+    background-size: cover;
+    opacity: 0.03; 
+    z-index: -1; 
+}
+
+.container-satu{
+    width: 1000px;
+    margin: 50px;
+    background-color: #fafafa;
     padding: 20px;
     box-sizing: border-box;
     display: flex;
+    justify-content: space-between;
+    border: 2px solid #ccc;
+    margin: 20px;
+    box-shadow: 0px 4px 8px rgba (0,0,0,0.1);
+    border-radius: 8px;
+    
+}
+
+.sidebar-satu {
+    width: 18%;
+    padding: 20px;
+}
+
+.sidebar-dua {
+    width:22%; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.kolom-utama{
+    width: 75%;
+    background-color: #fafafa;
+    padding: 20px;
+    box-sizing: border-box;
 }
