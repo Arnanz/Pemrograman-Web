@@ -1,0 +1,131 @@
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container untuk form */
+.form-container {
+    width: 60%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff; /* Warna latar belakang putih */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan lebih dalam */
+    border: 1px solid #eaeaea; /* Border halus */
+}
+
+/* Styling judul form */
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px; /* Ukuran font lebih besar */
+    color: #000000; /* Ubah warna judul menjadi hitam */
+    font-family: 'Poppins', sans-serif; /* Font modern */
+}
+
+/* Styling label */
+.form-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555; /* Warna label lebih terang */
+}
+
+/* Styling untuk input dan select */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="date"],
+.form-container input[type="time"],
+.form-container input[type="file"],
+.form-container select {
+    width: 100%;
+    padding: 12px; /* Padding lebih besar untuk kesan lebih luas */
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd; /* Border halus */
+    font-size: 16px;
+    color: #333;
+    background-color: #f7f9fc; /* Latar belakang input lebih cerah */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transisi lebih halus */
+}
+
+/* Border berubah warna saat input aktif */
+.form-container input:focus,
+.form-container select:focus {
+    border-color: #007bff; /* Warna biru */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Efek bayangan */
+    outline: none;
+}
+
+/* Tombol submit */
+.form-container button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745; /* Ubah warna tombol submit menjadi hijau */
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Tambahkan efek hover */
+}
+
+/* Tombol submit saat hover */
+.form-container button[type="submit"]:hover {
+    background-color: #218838; /* Hijau lebih gelap saat hover */
+    transform: translateY(-2px); /* Efek angkat saat hover */
+}
+
+/* Styling untuk pesan error atau informasi */
+.form-container .error-message {
+    color: #dc3545; /* Merah untuk pesan error */
+    font-size: 14px;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+
+.form-container .success-message {
+    color: #28a745; /* Hijau untuk pesan sukses */
+    font-size: 14px;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+
+/* Styling untuk instruksi tambahan di bawah field */
+.form-container .form-instructions {
+    font-size: 14px;
+    color: #666; /* Warna abu-abu untuk instruksi */
+    margin-bottom: 10px;
+}
+
+/* Styling untuk file input label */
+.form-container label[for="file"] {
+    display: block;
+    background-color: #007bff; /* Biru cerah */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+/* Hover untuk file input label */
+.form-container label[for="file"]:hover {
+    background-color: #0056b3; /* Biru lebih gelap */
+}
+
+/* Styling untuk checkbox */
+.form-container input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Container untuk checkbox dan radio button */
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}

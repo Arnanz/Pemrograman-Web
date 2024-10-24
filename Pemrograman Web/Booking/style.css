@@ -1,0 +1,111 @@
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Menggunakan Google Fonts */
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #000000;
+    padding: 15px;
+    text-align: center;
+}
+.navbar h1 {
+    color: white;
+    font-size: 28px;
+    margin: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+.navbar a:hover {
+    color: #f4f4f4;
+    background-color: #007bff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+/* Layout grid untuk lapangan */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.card h3 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 22px;
+}
+.card p {
+    margin-bottom: 5px;
+    color: #666;
+}
+
+/* Status untuk ketersediaan lapangan */
+.status {
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 10px;
+}
+.status.tersedia {
+    color: white;
+    background-color: #28a745;
+}
+.status.tidak-tersedia {
+    color: white;
+    background-color: #dc3545;
+}
+
+/* Tombol Action */
+.action-buttons {
+    margin-top: 15px;
+}
+.action-buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: #007bff;
+    transition: background-color 0.3s ease;
+}
+.action-buttons a:hover {
+    background-color: #0056b3;
+}
+
+/* Styling untuk tombol "Booking" */
+.action-buttons a.book-now {
+    background-color: #28a745;
+}
+.action-buttons a.book-now:hover {
+    background-color: #218838;
+}
+.lapangan-img {
+    width: 100%; /* Gambar responsif, lebar sesuai dengan kolom */
+    height: auto; /* Menjaga proporsi gambar */
+    border-radius: 4px; /* Mengatur sudut gambar agar lebih halus */
+    margin: 10px 0; /* Jarak antara gambar dan elemen lainnya */
+}
+

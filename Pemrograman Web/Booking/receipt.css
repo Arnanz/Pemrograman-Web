@@ -1,0 +1,59 @@
+/* receipt.css */
+body {
+    font-family: 'Courier New', Courier, monospace; /* Menggunakan font monospace seperti struk */
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px dashed #333; /* Garis pemisah dash */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 16px;
+    text-align: center; /* Memusatkan teks */
+}
+
+strong {
+    display: inline-block;
+    width: auto; /* Mengubah lebar menjadi auto agar teks di tengah */
+}
+
+hr {
+    border: none;
+    border-top: 1px dashed #333; /* Garis pemisah dash */
+    margin: 20px 0;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-family: 'Arial', sans-serif; /* Font yang lebih modern untuk tombol */
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+
+/* Garis bawah tanda terima */
+.receipt-footer {
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+    margin-top: 30px;
+}
